@@ -33,5 +33,4 @@ function post_type_project() {
   register_post_type( 'project', $args );
 }
 add_action( 'init', 'post_type_project' );
-add_post_type_support( 'project', 'post-formats' );
 ?>
