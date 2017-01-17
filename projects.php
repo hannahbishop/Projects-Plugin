@@ -31,6 +31,7 @@ function post_type_project() {
     'has_archive'   => true,
   );
   register_post_type( 'project', $args );
+  flush_rewrite_rules();
 }
 add_action( 'init', 'post_type_project' );
 ?>
