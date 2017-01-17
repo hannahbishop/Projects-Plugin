@@ -28,7 +28,7 @@ function post_type_project() {
     'public'        => true,
     'menu_position' => 15,
     'supports'      => array( 'title', 'thumbnail', 'excerpt', 'editor', 'custom-fields' ),
-    'has_archive'   => true,
+    'has_archive'   => false,
   );
   register_post_type( 'project', $args );
 }
