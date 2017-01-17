@@ -5,7 +5,7 @@ Description: Declares a plugin that will create a project post type. Modified fr
 Version: 1.0
 Author: Hannah Bishop
 */
-function post_type_project() {
+function create_posttype() {
   $labels = array(
     'name'               => 'Projects', 'post type general name',
     'singular_name'      => 'Project', 'post type singular name',
@@ -30,7 +30,7 @@ function post_type_project() {
     'supports'      => array( 'title', 'thumbnail', 'excerpt', 'editor', 'custom-fields' ),
     'has_archive'   => true,
   );
-  register_post_type( 'project', $args );
+  register_post_type( 'projects', $args );
 }
-add_action( 'init', 'post_type_project' );
+add_action( 'init', 'create_posttype' );
 ?>
