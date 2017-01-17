@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Project
+Plugin Name: Projects
 Description: Declares a plugin that will create a project post type. Modified from https://www.smashingmagazine.com/2012/11/complete-guide-custom-post-types/
 Version: 1.0
 Author: Hannah Bishop
@@ -33,4 +33,5 @@ function post_type_project() {
   register_post_type( 'project', $args );
 }
 add_action( 'init', 'post_type_project' );
+add_post_type_support( 'project', 'post-formats' );
 ?>
