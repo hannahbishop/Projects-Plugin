@@ -27,7 +27,7 @@ function post_type_project() {
     'description'   => 'Holds projects and project specific data',
     'public'        => true,
     'menu_position' => 15,
-    'supports'      => array( 'title', 'thumbnail', 'excerpt', 'custom-fields' ),
+    'supports'      => array( 'title', 'thumbnail', 'excerpt', 'editor', 'custom-fields' ),
     'has_archive'   => true,
   );
   register_post_type( 'project', $args );
